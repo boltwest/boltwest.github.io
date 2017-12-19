@@ -1,12 +1,12 @@
 body {
     margin: 0;
     border: none;
+    background: url("../images/sky.jpg") no-repeat;
+    background-size: 100vw;
 }
 .wrapper {
     width: 1000px;
     height: 1000px;             /* Заглушка*/
-    background: url("../images/sky.jpg") no-repeat;
-    background-size: 1000px;
     margin: 0 auto;
 }
 .logo {
@@ -37,6 +37,8 @@ body {
 }
 .header__text {
     flex: 0 0 400px;
+    font: 18px sans-serif;
+    font-style: italic;
 }
 .header__search {
 }
