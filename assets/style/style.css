@@ -1,3 +1,14 @@
+body {
+    margin: 0;
+    border: none;
+}
+.wrapper {
+    width: 1000px;
+    height: 1000px;             /* Заглушка*/
+    background: url("../images/sky.jpg") no-repeat;
+    background-size: 1000px;
+    margin: 0 auto;
+}
 .logo {
     width: 220px;
     padding: 10px;
@@ -15,6 +26,20 @@
     float: right;
     color: #374149;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .header__logo {
-    
+    margin: 5px;
+    flex: 0 0 220px;
+}
+.header__text {
+    flex: 0 0 400px;
+}
+.header__search {
+}
+.search {
+
 }
