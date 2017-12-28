@@ -78,41 +78,6 @@ body {
     font-style: italic;
 }
 
-.header__search {}
-
-.search {
-    border-radius: 5px;
-    box-shadow: 0 0 5px #7e7e7e;
-}
-
-.search input[type="text"] {
-    background: #d8d8d8;
-    border: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 10px;
-    margin: 0;
-    vertical-align: 0px;
-}
-
-.search input[type="text"]:focus {
-    outline: 0;
-    background: #e8e8e8;
-}
-
-.search input[type="submit"] {
-    background: #d8d8d8;
-    border: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 4px;
-    margin: 0 0 0 -4px;
-    font-family: "untitled-font-1";
-    font-size: 25px;
-    vertical-align: -7px;
-    color: #fff;
-}
-
 .nav {
     position: relative;
     margin-top: 20px;
