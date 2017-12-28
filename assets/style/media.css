@@ -1,0 +1,106 @@
+.menu [type="checkbox"] {
+    display: none;
+}
+
+.menu__toggle span {
+    font-family: "untitled-font-1";
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 11px;
+}
+
+.menu__toggle {
+    font-size: 20px;
+    display: none;
+    background: rgb(55, 65, 73);
+    background: -moz-linear-gradient(top, rgba(55, 65, 73, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(55, 65, 73, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(55, 65, 73, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(55, 65, 73, 1) 100%);
+    background: linear-gradient(to bottom, rgba(55, 65, 73, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(55, 65, 73, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#374149', endColorstr='#374149', GradientType=0);
+    color: #fff;
+    padding: 10px 50px;
+    position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 90vw;
+        overflow: hidden;
+    }
+
+    .menu li:hover>ul {
+        display: none;
+    }
+    .header__text {
+        display: none;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu__toggle {
+        display: block;
+    }
+
+    .menu input:checked~.menu__toggle {
+        background: rgb(124, 136, 146);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c8892', endColorstr='#7c8892', GradientType=0);
+    }
+
+    .menu input:checked~ul {
+        display: block;
+        position: relative;
+    }
+
+    .menu input:checked~a {
+        background: rgb(124, 136, 146);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c8892', endColorstr='#7c8892', GradientType=0);
+    }
+
+    .subMenu__toggle {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+    
+    .subMenu__toggle::before {
+        content: "c";
+        display: block;
+        font-family: "untitled-font-1";
+        font-size: 25px;
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 7px;
+    }
+    
+    .menu input:checked~.subMenu__toggle::before{
+        content: "d";
+    }
+    
+    .menu li>ul li ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+}

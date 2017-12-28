@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/style/media.css" type="text/css" />
     <link rel="icon" href="assets/images/titleicon50.gif" type="image/gif" />
     <link href="https://file.myfontastic.com/tmBNhYy3jHLhMRprfkFGkP/icons.css" rel="stylesheet">
     <title>Квадрики</title>
@@ -26,11 +27,19 @@
         </header>
         <main class="main">
             <nav class="menu">
+                <input type="checkbox" name="toggle" id="menu"/>
+                <label class="menu__toggle" for="menu"><span>e</span>Меню</label>
                 <ul>
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#">Гоночные дроны</a>
+                    <li>
+                        <input type="checkbox" name="toggle" id="subMen-1"/>
+                        <a href="#">Гоночные дроны</a>
+                        <label class="subMenu__toggle" for="subMen-1"></label>
                         <ul>
-                            <li><a href="#">FPV</a>
+                            <li>
+                                <input type="checkbox" name="toggle" id="subMen-1-1"/>
+                                <a href="#">FPV</a>
+                                <label class="subMenu__toggle" for="subMen-1-1"></label>
                                 <ul>
                                     <li><a href="#">Видео передатчик</a></li>
                                     <li><a href="#">Видео приемники</a></li>
@@ -64,7 +73,8 @@
                 </div>
             </nav>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+        </footer>
     </div>
 </body>
 

@@ -10,6 +10,7 @@ body {
     height: 1000px;
     /* Заглушка*/
     margin: 0 auto;
+    padding: 3px;
 }
 
 .anchor {
@@ -163,6 +164,10 @@ body {
     transition: .3s;
 }
 
+.nav__droneRasingList>li:first-child {
+    border-bottom-left-radius: 7px;
+}
+
 .nav__droneRasingList>li:hover {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7c8892+0,515c6b+42,515c6b+42,7c8892+100 */
     background: rgb(124, 136, 146);
@@ -209,6 +214,7 @@ body {
 
 .menu>ul li {
     border-right: 1px solid #7c8892;
+    position: relative;
 }
 
 .menu>ul>li:last-child {
@@ -267,13 +273,3 @@ body {
     top: 0;
 }
 
-
-
-
-
-@media screen and (max-width: 1000px) {
-    .wrapper {
-        width: 90vw;
-    }
-    .header__search {}
-}
