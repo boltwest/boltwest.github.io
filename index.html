@@ -26,10 +26,9 @@
                 <input type="checkbox" name="toggle" id="menu"/>
                 <label class="menu__toggle" for="menu"><span>e</span>Меню</label>
                 <ul>
-                    <li><a href="#">Главная</a></li>
                     <li>
                         <input type="checkbox" name="toggle" id="subMen-1"/>
-                        <a href="#">Гоночные дроны</a>
+                        <a href="#element_droneRacing">Гоночные дроны</a>
                         <label class="subMenu__toggle" for="subMen-1"></label>
                         <ul>
                             <li>
@@ -50,17 +49,35 @@
                             <li><a href="#">Запчасти</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Дроны для аэросъемки</a></li>
-                    <li><a href="#">Дроны для начинающих</a></li>
+                    <li><a href="#element_dronePhoto">Дроны для аэросъемки</a></li>
+                    <li><a href="#element_droneJunior">Дроны для начинающих</a></li>
                     <li><a href="#">Новости</a></li>
                     <li><a href="#">Обзоры</a></li>
                     <li><a href="#">Регистрация дронов</a></li>
                 </ul>
             </nav>
             <nav class="nav">
-                <div class="nav__droneRacing">
-                    <div class="nav__droneRacingText">drone<br>racing</div>
-                    <ul class="nav__droneRasingList">
+                <div class="nav__element nav__element_dronePhoto" id="element_dronePhoto">
+                    <div class="nav__text nav__text_dronePhotoText">drones for aerial<br>photography</div>
+                    <ul class="nav__list nav__list_dronePhotoList">
+                        <li><a href="#" title="linck">FPV</a></li>
+                        <li><a href="#" title="linck">Летная школа</a></li>
+                        <li><a href="#" title="linck">Соревнования</a></li>
+                        <li><a href="#" title="linck">Трасса</a></li>
+                    </ul>
+                </div>
+                <div class="nav__element nav__element_droneJunior" id="element_droneJunior">
+                    <div class="nav__text nav__text_droneJuniorText">drones for<br>juniors</div>
+                    <ul class="nav__list nav__list_droneJuniorList">
+                        <li><a href="#" title="linck">FPV</a></li>
+                        <li><a href="#" title="linck">Летная школа</a></li>
+                        <li><a href="#" title="linck">Соревнования</a></li>
+                        <li><a href="#" title="linck">Трасса</a></li>
+                    </ul>
+                </div>
+                <div class="nav__element nav__element_droneRacing" id="element_droneRacing">
+                    <div class="nav__text nav__text_droneRacingText">drone<br>racing</div>
+                    <ul class="nav__list nav__list_droneRasingList">
                         <li><a href="#" title="linck">FPV</a></li>
                         <li><a href="#" title="linck">Летная школа</a></li>
                         <li><a href="#" title="linck">Соревнования</a></li>
