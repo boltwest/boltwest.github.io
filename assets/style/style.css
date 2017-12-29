@@ -7,8 +7,6 @@ body {
 
 .wrapper {
     max-width: 1000px;
-    height: 1000px;
-    /* Заглушка*/
     margin: 0 auto;
     padding: 3px;
 }
@@ -84,29 +82,74 @@ body {
 }
 
 
-.nav__droneRacing {
+.nav__element {
     width: 100%;
     height: 400px;
+    position: relative;
     border-radius: 20px;
-    background: url(../images/210.png) no-repeat;
     background-size: 60%;
     background-position: 50% 70%;
     box-shadow: 0 0 10px black, inset 0 0 5px white;
     overflow: hidden;
 }
 
-.nav__droneRacingText {
-    width: 160px;
+.nav__element_droneRacing {
+    background: url(../images/210.png) no-repeat;
+    background-size: 60%;
+    background-position: 50% 70%;
+}
+
+.nav__element_dronePhoto {
+    background: url(../images/dronePhoto.png) no-repeat;
+    background-size: 60%;
+    background-position: 50% 70%;
+}
+
+.nav__element_droneJunior {
+    background: url(../images/droneJunior.png) no-repeat;
+    background-size: 65%;
+    background-position: 50% 55%;
+}
+
+.nav__element:not(:target)~.nav__element_droneRacing{
+    display: block;
+}
+
+.nav__element:not(:target),
+.nav__element:target~.nav__element_droneRacing{
+    display: none;
+}
+
+
+.nav__text {
     text-align: center;
     text-transform: uppercase;
     color: #374149;
-    font: 40px sans-serif;
     position: absolute;
+}
+
+.nav__text_droneRacingText {
+    width: 160px;
+    font: 40px sans-serif;
     left: 30px;
     top: 30px;
 }
 
-.nav__droneRasingList {
+.nav__text_dronePhotoText {
+    width: 200px;
+    font: 25px sans-serif;
+    left: 30px;
+    top: 30px;
+}
+
+.nav__text_droneJuniorText {
+    width: 200px;
+    font: 25px sans-serif;
+    left: 30px;
+    top: 30px
+}
+
+.nav__list {
     list-style: none;
     float: right;
     padding: 0;
@@ -114,7 +157,7 @@ body {
     font-size: 0;
 }
 
-.nav__droneRasingList>li {
+.nav__list>li {
     display: inline-block;
     height: 20px;
     background: rgb(55, 65, 73);
@@ -129,11 +172,11 @@ body {
     transition: .3s;
 }
 
-.nav__droneRasingList>li:first-child {
+.nav__list>li:first-child {
     border-bottom-left-radius: 7px;
 }
 
-.nav__droneRasingList>li:hover {
+.nav__list>li:hover {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7c8892+0,515c6b+42,515c6b+42,7c8892+100 */
     background: rgb(124, 136, 146);
     /* Old browsers */
@@ -148,7 +191,7 @@ body {
     transition: .3s;
 }
 
-.nav__droneRasingList>li a {
+.nav__list>li a {
     display: block;
     transform: skewX(-25deg);
     text-decoration: none;
@@ -156,6 +199,11 @@ body {
     font: 15px sans-serif;
     line-height: 20px;
 }
+
+
+
+
+
 
 .menu {
     box-shadow: 0 0 5px black;
@@ -237,4 +285,3 @@ body {
     left: 100%;
     top: 0;
 }
-
