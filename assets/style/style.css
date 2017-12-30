@@ -273,9 +273,56 @@ body {
     font: 25px sans-serif;
 }
 
-.article__img {
-    max-width: 100%;
+.video{
+    width: 560px;
+    height: 315px;
+    display: block;
 }
+
+.articleFpv__video{
+    margin: 20px auto;
+}
+
+.articleRacing__video{
+    float: right;
+}
+
+.articleFpv__video_linck{
+    margin: 20px auto;
+}
+
+.video_linck{
+    display: block;
+    width: 250px;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background: #3c3f41;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.video_linck:hover{
+    background: #ff4643;
+    transform: scale(1.1);
+}
+
+.articleFpv__img1 {
+    float: left;
+    margin-right: 3%;
+}
+
+.articleFpv__img2 {
+    float: right;
+}
+
+.articleFpv__img{
+    max-width: 48%;
+    margin-bottom: 15px;
+    transition: all .5s;
+}
+
 
 .article p {
     font: 18px sans-serif;
@@ -304,17 +351,17 @@ body {
 
 .articleRacing_img5 {
     display: block;
-    width: 50%;
-    margin: 15px auto;
+    width: calc(100% - 600px);
+    float: left;
 }
 
 .articleRacing__img {
     transition: all .5s;
 }
 
-.articleRacing__img:hover {
+.img_hover:hover {
     transform: scale(1.02);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.59);
+    box-shadow: 5px 5px 5px #3C3F41;
 }
 
 .articleRacing .articleRacing__text {
@@ -323,6 +370,13 @@ body {
 
 .articleRacing .articleRacing__text span {
     font: 19px sans-serif;
+}
+
+.articleRacing__video_linck{
+    margin: 40px auto;
+    clear: both;
+    position: relative;
+    top:20px;
 }
 
 .articleFpv,

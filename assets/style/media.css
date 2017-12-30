@@ -69,5 +69,34 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c8892', endColorstr='#7c8892', GradientType=0);
     }
 
+    .articleRacing__video{
+        float: none;
+        margin: 20px auto;
+    }
 
+    .articleRacing_img5{
+        float: none;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .articleRacing__video_linck{
+        position: static;
+        margin: 20px auto;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 620px){
+    .video{
+        width: 400px;
+        height: 225px;
+    }
+
+    .articleRacing_img5{
+        width: 80%;
+    }
 }
