@@ -161,7 +161,7 @@
     }
 
     .logo {
-        width: 130px;
+        width: 180px;
         padding: 7px;
         border-radius: 15px;
     }
@@ -173,10 +173,6 @@
     .logo__text {
         width: 90px;
         font: 900 18px sans-serif;
-    }
-
-    .header__logo {
-        flex: 0 0 180px;
     }
 }
 

@@ -61,20 +61,19 @@ body {
 
 /*header*/
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
     margin-top: 20px;
+    padding-bottom: 130px;
 }
 
 .header__logo {
     margin: 5px;
-    flex: 0 0 220px;
+    float: left;
 }
 
 .header__text {
-    flex: 0 0 400px;
+    width: 400px;
+    float: right;
+    margin-top:30px;
     font: 18px sans-serif;
     font-style: italic;
 }
