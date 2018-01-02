@@ -23,7 +23,7 @@
     position: relative;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
     .wrapper {
         width: 90vw;
         overflow: hidden;
@@ -33,9 +33,21 @@
         display: none;
     }
 
-    .menu ul {
-        display: none;
+    .menu ul{
+        display: block;
     }
+    .menu ul li a{
+        overflow: hidden;
+        height: 0;
+        padding: 0;
+    }
+
+
+    .menu input:checked~ul li a{
+        height: 20px;
+        padding: 10px;
+    }
+
 
     .menu__toggle {
         display: block;
@@ -53,9 +65,7 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c8892', endColorstr='#7c8892', GradientType=0);
     }
 
-    .menu input:checked~ul {
-        display: block;
-    }
+
 
     .menu input:checked~a {
         background: rgb(124, 136, 146);
@@ -90,6 +100,16 @@
 
 
 
+
+@media screen and (max-width: 770px){
+    .header__text{
+        display: none;
+    }
+    
+}
+
+
+
 @media screen and (max-width: 620px){
     .video{
         width: 400px;
@@ -99,4 +119,67 @@
     .articleRacing_img5{
         width: 80%;
     }
+
+    .nav__element{
+        height: 350px;
+    }
+
+    .nav__text_droneRacingText {
+        width: 150px;
+        font: 30px sans-serif;
+        left: 20px;
+        top: 50px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .nav__element{
+        height: 270px;
+    }
+
+    .nav__list{
+        float: none;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    .nav__list>li {
+        flex-grow: 1;
+        transform: none;
+    }
+
+    .nav__list>li:first-child {
+        border-radius: 0;
+    }
+
+    .nav__list>li a{
+        transform: none;
+    }
+
+    .nav__text_droneRacingText{
+        display: none;
+    }
+
+    .logo {
+        width: 130px;
+        padding: 7px;
+        border-radius: 15px;
+    }
+
+    .logo__Img {
+        width: 80px;
+    }
+
+    .logo__text {
+        width: 90px;
+        font: 900 18px sans-serif;
+    }
+
+    .header__logo {
+        flex: 0 0 180px;
+    }
+}
+
+@media screen and (max-width: 320px){
+
 }
