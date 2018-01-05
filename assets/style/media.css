@@ -26,7 +26,6 @@
 @media screen and (max-width: 1025px) {
     .wrapper {
         width: 90vw;
-        overflow: hidden;
     }
 
     .menu li:hover>ul {
@@ -95,16 +94,24 @@
         margin: 20px auto;
     }
 
+    .slider .slick-prev:before,
+    .slider .slick-next:before{
+        color: #374149;
+    }
+
+}
+
+@media screen and (max-width: 820px){
+    .header__text{
+        display: none;
+    }
 }
 
 
 
 
-
 @media screen and (max-width: 770px){
-    .header__text{
-        display: none;
-    }
+
     
 }
 
@@ -133,6 +140,10 @@
 }
 
 @media screen and (max-width: 480px){
+    .wrapper {
+        width: 98%;
+    }
+
     .nav__element{
         height: 270px;
     }
@@ -161,7 +172,7 @@
     }
 
     .logo {
-        width: 130px;
+        width: 180px;
         padding: 7px;
         border-radius: 15px;
     }
@@ -174,12 +185,10 @@
         width: 90px;
         font: 900 18px sans-serif;
     }
-
-    .header__logo {
-        flex: 0 0 180px;
-    }
 }
 
 @media screen and (max-width: 320px){
-
+    .prop{
+        display: none;
+    }
 }
