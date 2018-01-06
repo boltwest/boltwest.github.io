@@ -30,8 +30,11 @@ body {
     right: 0;
     bottom: 100px;
     opacity: .3;
+    -webkit-box-shadow: 0 0 7px 3px #ccc;
     box-shadow: 0 0 7px 3px #ccc;
     z-index: 100;
+    -webkit-transition: opacity .4s;
+    -o-transition: opacity .4s;
     transition: opacity .4s;
 }
 
@@ -44,7 +47,11 @@ body {
     width: 220px;
     padding: 10px;
     border-radius: 20px;
+    -webkit-box-shadow: 0 0 5px #374149;
     box-shadow: 0 0 5px #374149;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
@@ -61,12 +68,26 @@ body {
     color: #374149;
 }
 
-@keyframes prop {
+@-webkit-keyframes prop {
     from{
+        -webkit-transform: none;
         transform: none;
 
     }
     to{
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes prop {
+    from{
+        -webkit-transform: none;
+        transform: none;
+
+    }
+    to{
+        -webkit-transform: rotateZ(360deg);
         transform: rotateZ(360deg);
     }
 }
@@ -76,7 +97,10 @@ body {
     top:-180px;
     right: -160px;
     width: 400px;
+    -webkit-animation: prop 5s linear infinite;
     animation: prop 5s linear infinite;
+    -webkit-transform-origin: 50% 65%;
+    -ms-transform-origin: 50% 65%;
     transform-origin: 50% 65%;
 }
 
@@ -108,6 +132,7 @@ body {
 .nav {
     position: relative;
     margin-top: 20px;
+    -webkit-box-shadow: 0 0 10px black, inset 0 0 5px white;
     box-shadow: 0 0 10px black, inset 0 0 5px white;
     border-radius: 20px;
 }
@@ -178,14 +203,19 @@ body {
     display: inline-block;
     height: 20px;
     background: rgb(55, 65, 73);
-    background: -moz-linear-gradient(top, rgba(55, 65, 73, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(55, 65, 73, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(55, 65, 73, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(55, 65, 73, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 65, 73, 1)), color-stop(42%, rgba(81, 92, 107, 1)), color-stop(42%, rgba(81, 92, 107, 1)), to(rgba(55, 65, 73, 1)));
+    background: -o-linear-gradient(top, rgba(55, 65, 73, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(55, 65, 73, 1) 100%);
     background: linear-gradient(to bottom, rgba(55, 65, 73, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(55, 65, 73, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#374149', endColorstr='#374149', GradientType=0);
+    -webkit-transform: skewX(25deg);
+    -ms-transform: skewX(25deg);
     transform: skewX(25deg);
     text-align: center;
     padding: 8px;
     margin-right: -2px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
@@ -195,15 +225,20 @@ body {
 
 .nav__list > li:hover {
     background: rgb(124, 136, 146);
-    background: -moz-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(124, 136, 146, 1)), color-stop(42%, rgba(81, 92, 107, 1)), color-stop(42%, rgba(81, 92, 107, 1)), to(rgba(124, 136, 146, 1)));
+    background: -o-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
     background: linear-gradient(to bottom, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7c8892', endColorstr='#7c8892', GradientType=0);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
 .nav__list > li a {
     display: block;
+    -webkit-transform: skewX(-25deg);
+    -ms-transform: skewX(-25deg);
     transform: skewX(-25deg);
     text-decoration: none;
     color: white;
@@ -213,6 +248,7 @@ body {
 
 /*menu*/
 .menu {
+    -webkit-box-shadow: 0 0 5px black;
     box-shadow: 0 0 5px black;
     margin-top: 20px;
     padding: 0;
@@ -230,7 +266,11 @@ body {
 }
 
 .menu > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 0;
 }
@@ -248,8 +288,9 @@ body {
     display: block;
     height: calc(100% - 20px);
     background: rgb(55, 65, 73);
-    background: -moz-linear-gradient(top, rgba(55, 65, 73, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(55, 65, 73, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(55, 65, 73, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(55, 65, 73, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 65, 73, 1)), color-stop(42%, rgba(81, 92, 107, 1)), color-stop(42%, rgba(81, 92, 107, 1)), to(rgba(55, 65, 73, 1)));
+    background: -o-linear-gradient(top, rgba(55, 65, 73, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(55, 65, 73, 1) 100%);
     background: linear-gradient(to bottom, rgba(55, 65, 73, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(55, 65, 73, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#374149', endColorstr='#374149', GradientType=0);
     padding: 10px 15px;
@@ -257,15 +298,19 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    -webkit-transition: .8s;
+    -o-transition: .8s;
     transition: .8s;
 }
 
 .menu li a:hover {
     background: rgb(124, 136, 146);
-    background: -moz-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(124, 136, 146, 1)), color-stop(42%, rgba(81, 92, 107, 1)), color-stop(42%, rgba(81, 92, 107, 1)), to(rgba(124, 136, 146, 1)));
+    background: -o-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
     background: linear-gradient(to bottom, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7c8892', endColorstr='#7c8892', GradientType=0);
+    -webkit-box-shadow: 0 0 7px black, inset 0 0 5px #fff;
     box-shadow: 0 0 7px black, inset 0 0 5px #fff;
 }
 
@@ -322,11 +367,15 @@ body {
     text-align: center;
     background: #3c3f41;
     border-radius: 5px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
 .video_linck:hover {
     background: #ff4643;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -344,6 +393,8 @@ body {
 .articleFpv__img {
     max-width: 48%;
     margin-bottom: 15px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
@@ -381,6 +432,8 @@ body {
 }
 
 .articleRacing__img {
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
@@ -405,6 +458,8 @@ body {
     display: block;
     width: 90%;
     margin: 10px auto;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
@@ -434,11 +489,16 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 48%;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
 .img_hover:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
     transform: scale(1.02);
+    -webkit-box-shadow: 5px 5px 5px #3C3F41;
     box-shadow: 5px 5px 5px #3C3F41;
 }
 
@@ -450,7 +510,6 @@ body {
 .article:target {
     display: block;
 }
-
 
 
 
