@@ -23,59 +23,112 @@
     position: relative;
 }
 
+
+
 @media screen and (max-width: 1025px) {
+    body{
+        background: url("../images/sky_0.jpg") no-repeat;
+    }
+
     .wrapper {
         width: 90vw;
     }
 
-    .menu li:hover>ul {
-        display: none;
+    /*.menu li:hover>ul {*/
+        /*display: none;*/
+    /*}*/
+    .menu{
+        overflow: hidden;
     }
 
     .menu ul{
         display: block;
+        width: 100%;
+        float: left;
+        margin-top:-100%;
+        transition: all 1s;
     }
+
+
     .menu ul li a{
-        overflow: hidden;
-        height: 0;
-        padding: 0;
-    }
-
-
-    .menu input:checked~ul li a{
         height: 20px;
         padding: 10px;
     }
 
 
+
+    .menu input:checked~ul{
+        margin-top:0;
+    }
+
+
+
     .menu__toggle {
         display: block;
+        z-index: 10;
     }
+
 
     .menu input:checked~.menu__toggle {
         background: rgb(124, 136, 146);
-        /* Old browsers */
         background: -moz-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
-        /* FF3.6-15 */
         background: -webkit-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
-        /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c8892', endColorstr='#7c8892', GradientType=0);
     }
 
 
 
-    .menu input:checked~a {
-        background: rgb(124, 136, 146);
-        /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c8892', endColorstr='#7c8892', GradientType=0);
+    /*.menu input:checked~a {*/
+        /*background: rgb(124, 136, 146);*/
+        /*!* Old browsers *!*/
+        /*background: -moz-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);*/
+        /*!* FF3.6-15 *!*/
+        /*background: -webkit-linear-gradient(top, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);*/
+        /*!* Chrome10-25,Safari5.1-6 *!*/
+        /*background: linear-gradient(to bottom, rgba(124, 136, 146, 1) 0%, rgba(81, 92, 107, 1) 42%, rgba(81, 92, 107, 1) 42%, rgba(124, 136, 146, 1) 100%);*/
+        /*!* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+        /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c8892', endColorstr='#7c8892', GradientType=0);*/
+    /*}*/
+
+    .menu label:after{
+        content: "c";
+        display: block;
+        font-family: "untitled-font-1";
+        font-size:40px;
+        color: #fff;
+        position: absolute;
+        right:5px;
+        top:0;
+    }
+
+    .menu input:checked+label:after{
+        content: "d";
+    }
+
+    .menu_sub__toggle{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .menu>ul>li{
+        float: left;
+        width: 100%;
+
+    }
+
+    .menu li ul {
+        position: static;
+        display: block;
+    }
+
+    .menu li ul li:last-child::after{
+        content: "";
+        display: block;
+        clear: both;
     }
 
     .articleRacing__video{
@@ -105,6 +158,25 @@
     .header__text{
         display: none;
     }
+
+    body{
+        background: url("../images/sky_1.jpg") no-repeat;
+    }
+
+    .nav .nav__element_droneRacing {
+        background: url(../images/drone210_1.png) no-repeat 80% 0%;
+        background-size: 60%;
+    }
+
+    .nav .nav__element_dronePhoto {
+        background: url(../images/dronePhoto_1.png) no-repeat 100% 75%;
+        background-size: 70%;
+    }
+
+    .nav .nav__element_droneJunior {
+        background: url(../images/droneJunior_1.png) no-repeat 90% 70%;
+        background-size: 65%;
+    }
 }
 
 
@@ -118,6 +190,10 @@
 
 
 @media screen and (max-width: 620px){
+    body{
+        background: url("../images/sky_2.jpg") no-repeat;
+    }
+
     .video{
         width: 400px;
         height: 225px;
@@ -127,7 +203,7 @@
         width: 80%;
     }
 
-    .nav__element{
+    .nav .nav__element{
         height: 350px;
     }
 
@@ -137,14 +213,29 @@
         left: 20px;
         top: 50px;
     }
+
+    .nav__text_droneJuniorText{
+        width: 150px;
+        font: 30px sans-serif;
+        left: 20px;
+        top: 50px;
+    }
+
+    .nav__text_dronePhotoText{
+        top: 50px;
+    }
 }
 
 @media screen and (max-width: 480px){
+    body{
+        background: url("../images/sky_3.jpg") no-repeat;
+    }
+
     .wrapper {
         width: 98%;
     }
 
-    .nav__element{
+    .nav .nav__element{
         height: 270px;
     }
 
@@ -167,8 +258,33 @@
         transform: none;
     }
 
-    .nav__text_droneRacingText{
-        display: none;
+    .nav__text_dronePhotoText{
+        width: 130px;
+        font: 20px sans-serif;
+        left: 0px;
+        top: 40px;
+    }
+
+    .nav__text{
+        top: auto;
+        bottom: 5px;
+        left: 0;
+    }
+
+
+    .nav .nav__element_droneRacing {
+        background: url(../images/drone210_2.png) no-repeat 80% 50%;
+        background-size: 60%;
+    }
+
+    .nav .nav__element_dronePhoto {
+        background: url(../images/dronePhoto_2.png) no-repeat 100% 75%;
+        background-size: 70%;
+    }
+
+    .nav .nav__element_droneJunior {
+        background: url(../images/droneJunior_2.png) no-repeat 90% 70%;
+        background-size: 65%;
     }
 
     .logo {
@@ -188,7 +304,44 @@
 }
 
 @media screen and (max-width: 320px){
+    body{
+        background: url("../images/sky_4.jpg") no-repeat;
+    }
+
     .prop{
+        display: none;
+    }
+
+    .nav .nav__element{
+        height: 200px;
+    }
+
+    .nav .nav__element_droneRacing {
+        background: url(../images/drone210_2.png) no-repeat 50% 100%;
+        background-size: 80%;
+    }
+
+    .nav .nav__element_dronePhoto {
+        background: url(../images/dronePhoto_2.png) no-repeat 50% 85%;
+        background-size: 75%;
+    }
+
+    .nav .nav__element_droneJunior {
+        background: url(../images/droneJunior_2.png) no-repeat 50% 95%;
+        background-size: 75%;
+    }
+
+    .nav .nav__text{
+        top: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav .nav__text_droneRacingText{
+        display: none;
+    }
+
+    .nav .nav__list{
         display: none;
     }
 }
