@@ -122,7 +122,7 @@ body {
 }
 
 .nav__element_droneRacing {
-    background: url(../images/210.png) no-repeat 50% 70%;
+    background: url(../images/drone210.png) no-repeat 50% 70%;
     background-size: 60%;
 }
 
@@ -136,13 +136,6 @@ body {
     background-size: 65%;
 }
 
-/*.nav__element {*/
-    /*display: none;*/
-/*}*/
-
-/*.nav__element_droneRacing {*/
-    /*display: block;*/
-/*}*/
 
 .nav__text {
     text-align: center;

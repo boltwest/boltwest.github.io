@@ -24,6 +24,10 @@
 }
 
 @media screen and (max-width: 1025px) {
+    body{
+        background: url("../images/sky_0.jpg") no-repeat;
+    }
+
     .wrapper {
         width: 90vw;
     }
@@ -105,6 +109,25 @@
     .header__text{
         display: none;
     }
+
+    body{
+        background: url("../images/sky_1.jpg") no-repeat;
+    }
+
+    .nav .nav__element_droneRacing {
+        background: url(../images/drone210_1.png) no-repeat 80% 0%;
+        background-size: 60%;
+    }
+
+    .nav .nav__element_dronePhoto {
+        background: url(../images/dronePhoto_1.png) no-repeat 100% 75%;
+        background-size: 70%;
+    }
+
+    .nav .nav__element_droneJunior {
+        background: url(../images/droneJunior_1.png) no-repeat 90% 70%;
+        background-size: 65%;
+    }
 }
 
 
@@ -118,6 +141,10 @@
 
 
 @media screen and (max-width: 620px){
+    body{
+        background: url("../images/sky_2.jpg") no-repeat;
+    }
+
     .video{
         width: 400px;
         height: 225px;
@@ -127,7 +154,7 @@
         width: 80%;
     }
 
-    .nav__element{
+    .nav .nav__element{
         height: 350px;
     }
 
@@ -137,14 +164,29 @@
         left: 20px;
         top: 50px;
     }
+
+    .nav__text_droneJuniorText{
+        width: 150px;
+        font: 30px sans-serif;
+        left: 20px;
+        top: 50px;
+    }
+
+    .nav__text_dronePhotoText{
+        top: 50px;
+    }
 }
 
 @media screen and (max-width: 480px){
+    body{
+        background: url("../images/sky_3.jpg") no-repeat;
+    }
+
     .wrapper {
         width: 98%;
     }
 
-    .nav__element{
+    .nav .nav__element{
         height: 270px;
     }
 
@@ -167,8 +209,27 @@
         transform: none;
     }
 
-    .nav__text_droneRacingText{
-        display: none;
+    .nav__text_dronePhotoText{
+        width: 130px;
+        font: 20px sans-serif;
+        left: 0px;
+        top: 40px;
+    }
+
+
+    .nav .nav__element_droneRacing {
+        background: url(../images/drone210_2.png) no-repeat 80% 0%;
+        background-size: 60%;
+    }
+
+    .nav .nav__element_dronePhoto {
+        background: url(../images/dronePhoto_2.png) no-repeat 100% 75%;
+        background-size: 70%;
+    }
+
+    .nav .nav__element_droneJunior {
+        background: url(../images/droneJunior_2.png) no-repeat 90% 70%;
+        background-size: 65%;
     }
 
     .logo {
@@ -188,7 +249,44 @@
 }
 
 @media screen and (max-width: 320px){
+    body{
+        background: url("../images/sky_4.jpg") no-repeat;
+    }
+
     .prop{
+        display: none;
+    }
+
+    .nav .nav__element{
+        height: 200px;
+    }
+
+    .nav .nav__element_droneRacing {
+        background: url(../images/drone210_2.png) no-repeat 50% 100%;
+        background-size: 80%;
+    }
+
+    .nav .nav__element_dronePhoto {
+        background: url(../images/dronePhoto_2.png) no-repeat 50% 85%;
+        background-size: 75%;
+    }
+
+    .nav .nav__element_droneJunior {
+        background: url(../images/droneJunior_2.png) no-repeat 50% 95%;
+        background-size: 75%;
+    }
+
+    .nav .nav__text{
+        top: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav .nav__text_droneRacingText{
+        display: none;
+    }
+
+    .nav .nav__list{
         display: none;
     }
 }
