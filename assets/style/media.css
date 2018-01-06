@@ -29,6 +29,7 @@
 @media screen and (max-width: 1025px) {
     body{
         background: url("../images/sky_0.jpg") no-repeat;
+        background-size: 100%;
     }
 
     .wrapper {
@@ -165,6 +166,7 @@
 
     body{
         background: url("../images/sky_1.jpg") no-repeat;
+        background-size: 100%;
     }
 
     .nav .nav__element_droneRacing {
@@ -196,6 +198,7 @@
 @media screen and (max-width: 620px){
     body{
         background: url("../images/sky_2.jpg") no-repeat;
+        background-size: 100%;
     }
 
     .video{
@@ -233,6 +236,7 @@
 @media screen and (max-width: 480px){
     body{
         background: url("../images/sky_3.jpg") no-repeat;
+        background-size: 100%;
     }
 
     .wrapper {
@@ -323,6 +327,7 @@
 @media screen and (max-width: 320px){
     body{
         background: url("../images/sky_4.jpg") no-repeat;
+        background-size: 100%;
     }
 
     .prop{

@@ -2,7 +2,7 @@ body {
     margin: 0;
     border: none;
     background: url("../images/sky.jpg") no-repeat;
-    background-size: 100vw;
+    background-size: 100%;
     overflow: hidden;
 }
 
@@ -93,6 +93,7 @@ body {
 }
 
 .prop{
+    display: none;
     position: absolute;
     top:-180px;
     right: -160px;
@@ -509,6 +510,10 @@ body {
 
 .article:target {
     display: block;
+}
+
+.footer{
+    clear: both;
 }
 
 
