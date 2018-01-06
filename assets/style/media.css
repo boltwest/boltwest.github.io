@@ -28,7 +28,6 @@
 @media screen and (max-width: 1025px) {
     body{
         background: url("../images/sky_0.jpg") no-repeat;
-        overflow: hidden;
     }
 
     .wrapper {

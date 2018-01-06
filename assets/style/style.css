@@ -3,7 +3,6 @@ body {
     border: none;
     background: url("../images/sky.jpg") no-repeat;
     background-size: 100vw;
-    overflow: hidden;
 }
 
 .wrapper {
