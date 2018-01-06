@@ -25,14 +25,34 @@
 }
 
 
+@media screen and (max-width: 1426px){
+    .header__text {
+        margin-right:250px;
+    }
+}
 
 @media screen and (max-width: 1025px) {
     body{
         background: url("../images/sky_0.jpg") no-repeat;
+        background-size: 100vw;
+
     }
 
     .wrapper {
         width: 90vw;
+    }
+
+    .prop{
+        overflow: hidden;
+        right:-4vw;
+    }
+
+    .prop__img{
+        right:-160px;
+    }
+
+    .header__text {
+        margin-right:80px;
     }
 
     /*.menu li:hover>ul {*/
@@ -165,6 +185,7 @@
 
     body{
         background: url("../images/sky_1.jpg") no-repeat;
+        background-size: 100vw;
     }
 
     .nav .nav__element_droneRacing {
@@ -196,6 +217,7 @@
 @media screen and (max-width: 620px){
     body{
         background: url("../images/sky_2.jpg") no-repeat;
+        background-size: 100vw;
     }
 
     .video{
@@ -233,10 +255,15 @@
 @media screen and (max-width: 480px){
     body{
         background: url("../images/sky_3.jpg") no-repeat;
+        background-size: 100vw;
     }
 
     .wrapper {
         width: 98%;
+    }
+
+    .prop{
+        right:0;
     }
 
     .nav .nav__element{
@@ -318,11 +345,21 @@
         width: 90px;
         font: 900 18px sans-serif;
     }
+
+
+}
+
+@media screen and (max-width: 420px){
+    .video{
+        width: 300px;
+        height: 169px;
+    }
 }
 
 @media screen and (max-width: 320px){
     body{
         background: url("../images/sky_4.jpg") no-repeat;
+        background-size: 100vw;
     }
 
     .prop{
@@ -360,5 +397,10 @@
 
     .nav .nav__list{
         display: none;
+    }
+
+    .video{
+        width: 250px;
+        height: 141px;
     }
 }
