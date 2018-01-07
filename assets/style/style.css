@@ -520,13 +520,16 @@ body {
 }
 
 .articleTermin img{
+    display: inline-block;
     position: absolute;
     width: 0;
-    transition: width .5s;
+    border-radius: 10px;
+    transition: all .5s;
 }
 
 .terminButton:hover+img{
     width: 300px;
+    box-shadow: 0 0 10px gray;
 }
 
 .article,
