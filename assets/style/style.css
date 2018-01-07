@@ -94,7 +94,7 @@ body {
 .prop__img{
     position: absolute;
     top:-180px;
-    right: calc(((100vw - 1006px) / 2 - 120px) * -1);
+    right: calc(((100vw - 1006px) / 2 - 140px) * -1);
     width: 400px;
     -webkit-animation: prop 5s linear infinite;
     animation: prop 5s linear infinite;
