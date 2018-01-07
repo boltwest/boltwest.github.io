@@ -5,16 +5,53 @@ $(function(f){
     });
     
     $(".slider").slick({
-    autoplay: true,
-    speed: 2000,
-    dots: true,
-    responsive: [{ 
-        breakpoint: 500,
-        settings: {
-            dots: true,
-            arrows: false,
-            infinite: false,
-        } 
-    }]
-});
+        autoplay: true,
+        speed: 2000,
+        dots: true,
+        responsive: [{
+            breakpoint: 500,
+            settings: {
+                dots: true,
+                arrows: false,
+            }
+        }]
+    });
+    $(".slider2").slick({
+		dots: true,
+		fade: true,
+		autoplay: true,
+		responsive: [{
+			breakpoint: 500,
+			settings: {
+				dots: false,
+				arrows: false,
+			}
+		}]
+    })
+
+	$(".slider3").slick({
+		dots: true,
+		fade: true,
+		autoplay: true,
+		responsive: [{
+			breakpoint: 500,
+			settings: {
+				dots: false,
+				arrows: false,
+			}
+		}]
+	})
+
+	$(".slider4").slick({
+		dots: true,
+		fade: true,
+		autoplay: true,
+		responsive: [{
+			breakpoint: 500,
+			settings: {
+				dots: false,
+				arrows: false,
+			}
+		}]
+	})
 });
