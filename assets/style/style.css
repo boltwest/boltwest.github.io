@@ -278,9 +278,10 @@ body {
     padding: 0;
 }
 
-.menu > ul li {
+.menu > ul > li {
     border-right: 1px solid #7c8892;
     position: relative;
+    flex-grow:1;
 }
 
 .menu > ul > li:last-child {
@@ -340,7 +341,7 @@ body {
 
 .article h5 {
     text-align: center;
-    font: 23px sans-serif;
+    font: 28px sans-serif;
     font-weight:700;
 }
 
@@ -507,11 +508,6 @@ body {
     box-shadow: 5px 5px 5px #3C3F41;
 }
 
-.textBold{
-    font-size: 25px;
-    font-weight:600;
-}
-
 .terminButton{
     font-size: 20px;
     font-weight:400;
@@ -519,49 +515,54 @@ body {
     cursor: pointer;
 }
 
+.articleTermin p{
+    position: relative;
+}
+
 .articleTermin img{
     display: inline-block;
     position: absolute;
+    bottom:-20px;
+    right:calc(50% - 30px);
     width: 0;
     border-radius: 10px;
+    z-index: 100;
     transition: all .5s;
 }
 
-.terminButton:hover+img{
+.terminButton:hover img{
     width: 300px;
     box-shadow: 0 0 10px gray;
-}
-
-.article,
-.article {
-    display: none;
-}
-
-.article:target {
-    display: block;
+    transform: translateX(40%) translateY(100%);
 }
 
 .slider2{
     padding:10px;
 }
 
+.slider4 img,
 .slider2 img,
 .slider3 img{
     width: 100%;
 }
 
+.slider4 .slick-prev:before,
+.slider4 .slick-next:before,
+.slider3 .slick-prev:before,
+.slider3 .slick-next:before,
 .slider2 .slick-prev:before,
 .slider2 .slick-next:before{
     color: #374149;
 }
 
-.slider3 .slick-prev:before,
-.slider3 .slick-next:before{
-    color: #374149;
-}
 
 p.textArial{
     font: italic 17px arial;
+}
+
+.textBold{
+    font-size: 21px;
+    font-weight:550;
 }
 
 .articleDronePhoto{
@@ -571,7 +572,8 @@ p.textArial{
 }
 
 .articleDronePhoto3,
-.articleDronePhoto4{
+.articleDronePhoto4,
+.Junior_bestDrone_img{
     width: 40%;
     box-shadow: 0 0 10px #555;
     cursor: pointer;
@@ -579,7 +581,8 @@ p.textArial{
 }
 
 .articleDronePhoto3:hover,
-.articleDronePhoto4:hover{
+.articleDronePhoto4:hover,
+.Junior_bestDrone_img:hover{
     transform: scale(2);
     box-shadow: 20px 20px 20px #555;
 }
@@ -588,13 +591,15 @@ p.textArial{
     margin:0 auto;
 }
 
+.article {
+    display: none;
+}
 
+.article:target {
+    display: block;
+}
 
-
-
-
-
-
-
-
-
+.Junior_bestDrone_img{
+    display: block;
+    margin:0 auto;
+}

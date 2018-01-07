@@ -214,12 +214,14 @@
     }
 
     .articleDronePhoto3,
-    .articleDronePhoto4{
+    .articleDronePhoto4,
+    .Junior_bestDrone_img{
         width: 60%;
     }
 
     .articleDronePhoto3:hover,
-    .articleDronePhoto4:hover{
+    .articleDronePhoto4:hover,
+    .Junior_bestDrone_img:hover{
         transform: scale(1.6);
     }
 }
