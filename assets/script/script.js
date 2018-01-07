@@ -41,4 +41,17 @@ $(function(f){
 			}
 		}]
 	})
+
+	$(".slider4").slick({
+		dots: true,
+		fade: true,
+		autoplay: true,
+		responsive: [{
+			breakpoint: 500,
+			settings: {
+				dots: false,
+				arrows: false,
+			}
+		}]
+	})
 });

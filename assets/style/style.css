@@ -68,38 +68,40 @@ body {
 }
 
 @-webkit-keyframes prop {
-    from{
+    from {
         -webkit-transform: none;
         transform: none;
 
     }
-    to{
+    to {
         -webkit-transform: rotateZ(360deg);
         transform: rotateZ(360deg);
     }
 }
 
 @keyframes prop {
-    from{
+    from {
         -webkit-transform: none;
         transform: none;
 
     }
-    to{
+    to {
         -webkit-transform: rotateZ(360deg);
         transform: rotateZ(360deg);
     }
 }
 
-.prop__img{
+.prop__img {
+
     position: absolute;
-    top:-180px;
+    top: -180px;
     right: calc(((100vw - 1006px) / 2 - 160px) * -1);
     width: 400px;
     -webkit-animation: prop 5s linear infinite;
     animation: prop 5s linear infinite;
+    -webkit-transform-origin: 50% 66%;
+    -ms-transform-origin: 50% 66%;
     transform-origin: 50% 66%;
-
 
 }
 
@@ -125,8 +127,8 @@ body {
 .header__text {
     width: 400px;
     float: right;
-    margin-top:30px;
-    margin-right:120px;
+    margin-top: 30px;
+    margin-right: 120px;
     font: 18px sans-serif;
     font-style: italic;
 }
@@ -164,7 +166,6 @@ body {
     background: url(../images/droneJunior.png) no-repeat 50% 55%;
     background-size: 65%;
 }
-
 
 .nav__text {
     text-align: center;
@@ -278,9 +279,12 @@ body {
     padding: 0;
 }
 
-.menu > ul li {
+.menu > ul > li {
     border-right: 1px solid #7c8892;
     position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 }
 
 .menu > ul > li:last-child {
@@ -335,13 +339,13 @@ body {
 .article h4 {
     text-align: center;
     font: 35px sans-serif;
-    font-weight:800;
+    font-weight: 800;
 }
 
 .article h5 {
     text-align: center;
-    font: 23px sans-serif;
-    font-weight:700;
+    font: 28px sans-serif;
+    font-weight: 700;
 }
 
 .video {
@@ -507,32 +511,99 @@ body {
     box-shadow: 5px 5px 5px #3C3F41;
 }
 
-.textBold{
-    font-size: 25px;
-    font-weight:600;
-}
-
-.terminButton{
+.terminButton {
     font-size: 20px;
-    font-weight:400;
+    font-weight: 400;
     color: gray;
     cursor: pointer;
 }
 
-.articleTermin img{
+.articleTermin p {
+    position: relative;
+}
+
+.articleTermin img {
     display: inline-block;
     position: absolute;
+    bottom: -20px;
+    right: calc(50% - 30px);
     width: 0;
     border-radius: 10px;
+    z-index: 100;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
-.terminButton:hover+img{
+.terminButton:hover img {
     width: 300px;
+    -webkit-box-shadow: 0 0 10px gray;
     box-shadow: 0 0 10px gray;
+    -webkit-transform: translateX(40%) translateY(100%);
+    -ms-transform: translateX(40%) translateY(100%);
+    transform: translateX(40%) translateY(100%);
 }
 
-.article,
+.slider2 {
+    padding: 10px;
+}
+
+.slider4 img,
+.slider2 img,
+.slider3 img {
+    width: 100%;
+}
+
+.slider4 .slick-prev:before,
+.slider4 .slick-next:before,
+.slider3 .slick-prev:before,
+.slider3 .slick-next:before,
+.slider2 .slick-prev:before,
+.slider2 .slick-next:before {
+    color: #374149;
+}
+
+p.textArial {
+    font: italic 17px arial;
+}
+
+.textBold {
+    font-size: 21px;
+    font-weight: 550;
+}
+
+.articleDronePhoto {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.articleDronePhoto3,
+.articleDronePhoto4,
+.Junior_bestDrone_img {
+    width: 40%;
+    -webkit-box-shadow: 0 0 10px #555;
+    box-shadow: 0 0 10px #555;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.articleDronePhoto3:hover,
+.articleDronePhoto4:hover,
+.Junior_bestDrone_img:hover {
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+    -webkit-box-shadow: 20px 20px 20px #555;
+    box-shadow: 20px 20px 20px #555;
+}
+
+.articleDronePhoto__video {
+    margin: 0 auto;
+}
+
 .article {
     display: none;
 }
@@ -541,60 +612,41 @@ body {
     display: block;
 }
 
-.slider2{
-    padding:10px;
-}
-
-.slider2 img,
-.slider3 img{
-    width: 100%;
-}
-
-.slider2 .slick-prev:before,
-.slider2 .slick-next:before{
-    color: #374149;
-}
-
-.slider3 .slick-prev:before,
-.slider3 .slick-next:before{
-    color: #374149;
-}
-
-p.textArial{
-    font: italic 17px arial;
-}
-
-.articleDronePhoto{
-    width: 70%;
+.Junior_bestDrone_img {
     display: block;
     margin: 0 auto;
 }
 
-.articleDronePhoto3,
-.articleDronePhoto4{
-    width: 40%;
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px #555;
     box-shadow: 0 0 10px #555;
-    cursor: pointer;
-    transition: all .5s;
+    margin: 15px 0;
+
 }
 
-.articleDronePhoto3:hover,
-.articleDronePhoto4:hover{
-    transform: scale(2);
-    box-shadow: 20px 20px 20px #555;
+.footer_img {
+    display: none;
 }
 
-.articleDronePhoto__video{
-    margin:0 auto;
+.footer_img img {
+    width: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
+.footer p {
+    font-family: 'Lobster', cursive;
+    color: #555;
+}

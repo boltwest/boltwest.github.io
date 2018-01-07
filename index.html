@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="assets/style/style.css" type="text/css"/>
     <link rel="stylesheet" href="assets/style/media.css" type="text/css"/>
     <link rel="icon" href="assets/images/titleicon50.gif" type="image/gif"/>
-    <link href="https://file.myfontastic.com/tmBNhYy3jHLhMRprfkFGkP/icons.css" rel="stylesheet">
+    <link href="assets/font/untitled-font-1/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <title>Квадрики</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -52,8 +53,16 @@
                         <li><a href="#articleDronePhotoGalery">Фото с дронов</a></li>
                     </ul>
                 </li>
-                <li><a href="#element_droneJunior">Дроны для начинающих</a></li>
-                <li><a href="#">Новости</a></li>
+                <li><a href="#element_droneJunior">Дроны для начинающих</a>
+                    <input type="checkbox" name="toggle" id="menu_sub3"/>
+                    <label class="menu_sub__toggle" for="menu_sub3"></label>
+                    <ul>
+                        <li><a href="#articleFpv">FPV</a></li>
+                        <li><a href="#articleDroneJunior_advice">Советы начинающим</a></li>
+                        <li><a href="#articleDroneJunior_bestDrone">Выбор дрона</a></li>
+                        <li><a href="#articleDroneJunior_gallery">Фото дронов</a></li>
+                    </ul>
+                </li>
                 <li><a href="#articleGalery">фото</a></li>
                 <li><a href="#articleTermin">Словарь терминов</a></li>
             </ul>
@@ -79,10 +88,10 @@
             <div class="nav__element nav__element_droneJunior" id="element_droneJunior">
                 <div class="nav__text nav__text_droneJuniorText">drones for<br>juniors</div>
                 <ul class="nav__list nav__list_droneJuniorList">
-                    <li><a href="#" title="linck">FPV</a></li>
-                    <li><a href="#" title="linck">Летная школа</a></li>
-                    <li><a href="#" title="linck">Соревнования</a></li>
-                    <li><a href="#" title="linck">Трасса</a></li>
+                    <li><a href="#articleFpv" title="linck">FPV</a></li>
+                    <li><a href="#articleDroneJunior_advice" title="linck">Советы</a></li>
+                    <li><a href="#articleDroneJunior_bestDrone" title="linck">Выбор дрона</a></li>
+                    <li><a href="#articleDroneJunior_gallery" title="linck">Фото дронов</a></li>
                 </ul>
             </div>
         </nav>
@@ -681,7 +690,8 @@
                 <p>Мультироторные платформы &ndash; квадрокоптеры и гексакоптеры для Canon и Nikon есть у производителей
                     DJI и
                     Align, например это модели DJI Matrice, Align M690L и другие. </p>
-                <p>Что ж выбор остаётся за вами, главное &ldquo;не переборщить&rdquo; или, наоборот, &ldquo;не дооценить&rdquo; с требованиями к
+                <p>Что ж выбор остаётся за вами, главное &ldquo;не переборщить&rdquo; или, наоборот, &ldquo;не дооценить&rdquo;
+                    с требованиями к
                     дрону перед покупкой, так как от этого очень сильно зависит цена на оборудование.</p>
             </article>
             <article class="article articleDronePhotoGalery" id="articleDronePhotoGalery">
@@ -703,10 +713,11 @@
                     что обычно размещаются по краям коптера. Русское название &laquo;квадрокоптер&raquo; &mdash; калька
                     с английского
                     &laquo;quadcopter&raquo;, что переводиться как 4&ndash;роторный вертолет. Примеры квадрокоптеров:
-                    <span class="terminButton">DJI Inspire 1</span><img src="assets/images/termin/DJIInspire1.jpg"
-                                                                        alt="фото дрона" title="фото дрона">,
-                    <span class="terminButton">Phantom 2 Vision Plus</span>.<img
-                            src="assets/images/termin/Phantom2VisionPlus.jpg" alt="фото дрона" title="фото дрона"></p>
+                    <span class="terminButton">DJI Inspire 1<img src="assets/images/termin/DJIInspire1.jpg"
+                                                                 alt="фото дрона" title="фото дрона"></span>,
+                    <span class="terminButton">Phantom 2 Vision Plus.<img
+                            src="assets/images/termin/Phantom2VisionPlus.jpg" alt="фото дрона"
+                            title="фото дрона"></span></p>
                 <p><span class="textBold">Мультикоптер</span> &mdash; общее название для беспилотных летательных
                     аппаратов, у которых количество пропеллеров (несущих винтов) больше, чем 2. Образовано от слов
                     &laquo;multi&raquo; (несколько) и &laquo;copter&raquo; (вертолет).</p>
@@ -714,19 +725,20 @@
                     что обычно размещаются по краям коптера. Название произошло от слов &laquo;hexa&raquo; (&laquo;гекса&raquo;,
                     с
                     древнегреческого — &laquo;шесть&raquo;) и &laquo;copter&raquo;. Пример гексакоптеров: <span
-                            class="terminButton">DJI Flame Wheel ARF KIT</span><img
-                            src="assets/images/termin/DJIFlameWheelARFKIT.jpg" alt="фото дрона" title="фото дрона">,
-                    <span class="terminButton">DJI S900</span>.<img src="assets/images/termin/DJIS900.jpg"
-                                                                    alt="фото дрона" title="фото дрона">
+                            class="terminButton">DJI Flame Wheel ARF KIT<img
+                            src="assets/images/termin/DJIFlameWheelARFKIT.jpg" alt="фото дрона"
+                            title="фото дрона"></span>,
+                    <span class="terminButton">DJI S900.<img src="assets/images/termin/DJIS900.jpg"
+                                                             alt="фото дрона" title="фото дрона"></span>
                 </p>
                 <p><span class="textBold">Октокоптер</span> &mdash; беспилотный летательный аппарат с 8 пропеллерами,
                     что обычно размещаются по краям коптера. Название произошло от слов &laquo;octo&raquo; (&laquo;окто&raquo;,
                     с латыни &mdash;
                     &laquo;восемь&raquo;) и &laquo;copter&raquo;. Примеры октокоптеров: <span
-                            class="terminButton">DJI S1000</span><img
-                            src="assets/images/termin/DJIS1000.jpg" alt="фото дрона" title="фото дрона">,
-                    <span class="terminButton">DJI S1000+</span>.<img src="assets/images/termin/DJIS1000p.jpg"
-                                                                      alt="фото дрона" title="фото дрона"></p>
+                            class="terminButton">DJI S1000<img
+                            src="assets/images/termin/DJIS1000.jpg" alt="фото дрона" title="фото дрона"></span>,
+                    <span class="terminButton">DJI S1000+.<img src="assets/images/termin/DJIS1000p.jpg"
+                                                               alt="фото дрона" title="фото дрона"></span></p>
                 <p><span class="textBold">Коптер </span> &mdash; сокращение от слова &laquo;helicopter&raquo;, вертолет.
                     Используется либо по прямому назначению, либо как обозначение беспилотного летательного аппарата с n&ndash;ым
                     количеством несущих винтов.</p>
@@ -757,8 +769,193 @@
                         еще</a></p>
             </article>
         </section>
+        <section class="section sectionDroneJunior" id="sectionDroneJunior">
+            <article class="article articleDroneJunior_advice" id="articleDroneJunior_advice">
+                <h4>10 Советов Для Начинающих Пилотов Дронов</h4>
+                <p>Дроны могут доставить вам немало радости, если вы научитесь хорошо ими управлять. Мы предлагает вам
+                    ознакомиться с десятью важными советами, которые помогут вам начать летать.</p>
+                <ol>
+                    <li>
+                        <p><span class="textBold">Узнайте, как заглушить ваш дрон!</span> &mdash; Пока вы только учитесь
+                            управлять своим дроном, он может выйти из&ndash;под контроля. Лучшее, что вы можете сделать
+                            в
+                            такой ситуации &mdash; посадить дрон и заглушить его. Потренируйтесь просто запускать
+                            двигатели
+                            дрона и тут же их выключать, не отрываясь от земли.</p>
+                    </li>
+                    <li>
+                        <p><span class="textBold">Найдите просторную открытую площадку для вашего первого полёта.</span>
+                            &mdash; Вам понадобится некоторое время, чтобы привыкнуть к управлению, и сделать это будет
+                            легче на открытом пространстве без лишних препятствий. Избегайте полётов внутри помещений и
+                            рядом с людьми, пока не почувствуете себя достаточно уверенно.</p>
+                    </li>
+                    <li>
+                        <p>Удостоверьтесь, что <span class="textBold">GPS на вашем дроне включен</span>(если таковая
+                            функция у него есть). Однако стоит заметить, некоторые пилоты рекомендуют учиться летать без
+                            помощи GPS, поскольку в дальнейшем такое умение значительно облегчит вам жизнь.</p>
+                    </li>
+                    <li>
+                        <p><span class="textBold">Потренируйтесь взлетать и садиться. </span> &mdash; Поднимите дрон на
+                            уровень глаз и затем посадите его. Повторите это несколько раз, пока у вас не получится
+                            сделать это достаточно гладко (особенно если внизу вашего дрона крепится камера).</p>
+                    </li>
+                    <li>
+                        <p><span class="textBold">Начинайте летать на уровне глаз.</span> &mdash; Когда вы только
+                            учитесь летать, держите дрон на уровне глаз. Так вам будет гораздо легче определить, в какую
+                            сторону он развёрнут. Если вы потеряете контроль, вы сможете ухватить дрон за посадочные
+                            &ldquo;лыжи&rdquo; и затем выключить двигатели. Не бойтесь двигаться вслед за дроном. Если
+                            вы будете
+                            держаться близко к нему, это придаст вам больше уверенности, а кроме того у вас будет больше
+                            шансов спасти дрон, если дело дойдёт до падения.</p>
+                    </li>
+                    <li>
+                        <p><span class="textBold">Научитесь разворачиваться.</span> &mdash; Очень важно уметь
+                            разворачивать дрон в нужную сторону. К примеру, вы отлетели на 10 метров и хотите вернуть
+                            дрон назад. Вы можете просто полететь назад либо развернуть дрон, чтобы он смотрел на вас. В
+                            таком случае, когда вы будете наклонять стик на пульте вперёд, дрон полетит назад к вам.
+                            Развороты &mdash; одна из самых сложных вещей для новичков. Если вы дезориентируетесь,
+                            добавьте
+                            немного газа и обратите внимание, в какую сторону направлен дрон, после чего вновь поверните
+                            его к вам лицом. Если же вы окончательно запутались &mdash; просто посадите дрон и начните
+                            всё с
+                            начала.</p>
+                    </li>
+                    <li>
+                        <p><span class="textBold">Загрузите приложение.</span> &mdash; Если у вашего дрона есть камера и
+                            специальное приложение, обязательно загрузите его и внимательно изучите перед первым
+                            полётом.</p>
+                    </li>
+                    <li>
+                        <p><span class="textBold">Не хватайтесь за пропеллеры.</span> &mdash; Даже небольшие пропеллеры
+                            могут сильно поранить вас, раскрутившись на полную скорость. Будьте осторожнее.</p>
+                    </li>
+                    <li>
+                        <p><span class="textBold">Установите защиту пропеллеров.</span> &mdash; Если в комплекте к
+                            вашему дрону шла защита для пропеллеров, я рекомендую установить её. Она не только защищает
+                            пропеллеры, но и позволяет дрону &laquo;отскакивать&raquo; от стен, вместо того чтобы
+                            упасть.</p>
+                    </li>
+                    <li>
+                        <p><span class="textBold">Изучите инструкцию к пульту управления.</span> &mdash; Я знаю, что
+                            никто не любит читать инструкции, но вы хотя бы взгляните на рисунок с обозначением функций
+                            клавиш и стиков. Вы должны знать, за что отвечает каждая клавиша. Разберитесь, где находится
+                            газ, а где &mdash; стик разворота.</p>
+                    </li>
+                </ol>
+                <h5>В качестве бонуса</h5>
+                <p>Изучив основы управления, разработайте небольшую трассу с препятствиями, чтобы проверить свои навыки.
+                    Не стройте слишком сложную и крепкую трассу, для обеспечения своего дрона в целосности.</p>
+                <p>Управление дроном доставляет море удовольствия. Я уверен, что если вы будете следовать вышеописанным
+                    советам, то сможете стать настоящим пилотом!</p>
+            </article>
+            <article class="article articleDroneJunior_bestDrone" id="articleDroneJunior_bestDrone">
+                <h4>Лучшие квадрокоптеры для начинающих &mdash; какой дрон выбрать новичку</h4>
+                <p>Здесь детально постараемся ответить на вопрос, какой квадрокоптер выбрать для первого знакомства.
+                    Цены на дроны в нашей подборе не превышают 50$, так что вы сможете
+                    разобраться, какой беспилотник лучше всего подойдет лично вам и не ударит по карману.</p>
+                <h5>Syma X5C и Syma X5HW ($30)</h5>
+                <img src="assets/images/droneJunior/SymaX5C.jpg" alt="Фото дрона" title="Фото дрона"
+                     class="Junior_bestDrone_img Junior_bestDrone_img1">
+                <p>Syma X5 (без буквы C) &mdash; это пожалуй самый &laquo;начинающий беспилотник&raquo; по мнению почти
+                    всех опытных
+                    любителей дронов. Многие из них начали свой полет именно на этой модели. Дрон имеет хорошее качество
+                    сборки, он прочен и легок в управлении &mdash; что еще требуется для новичка?</p>
+                <p>Syma X5C &mdash; это практически тот же беспилотный аппарат, но с HD видео камерой, которая позволяет
+                    делать фото в полете и записывать видео в формате 720p. Этот квадрокоптер очень стабильный и он
+                    умеет делать вращения и сальто в воздухе. Модель Syma X5C питается от аккумулятора емкостью 500 мАч,
+                    3.7V и может продержаться в воздухе около 5&ndash;7 минут от одного заряда.</p>
+                <p>Syma X5HW &mdash; это еще более прокачанная модель, которая позволяет стримить все происходящее с
+                    камеры на ваш смартфон по Wi&ndash;Fi и работать в режиме &laquo;от первого лица&raquo; FPV.</p>
+                <h5>Yizhan Tarantula X6 ($41)</h5>
+                <img src="assets/images/droneJunior/Tarantula.jpg" alt="Фото дрона" title="Фото дрона"
+                     class="Junior_bestDrone_img Junior_bestDrone_img2">
+                <p>Yizhan Tarantula X6 &mdash; один из лучших дронов, которые вы можете купить за 40&ndash;45 долларов.
+                    Это большой,
+                    очень быстрый и более сложный в управлении квадрокоптер в нашем рейтинге лучших. Он позволяет
+                    полностью насладиться полетами на открытом пространстве и отточить навыки мастерства управления
+                    беспилотниками у начинающим пользователям.</p>
+                <p>Tarantula X6 также достаточно мощный, чтобы <strong>поднять экшн&ndash;камеру на своем борту</strong>.
+                    Так что если у вас
+                    есть спортивная камера &mdash; с этим дроном в тандеме могут получиться очень крутые фото и видео.
+                    Yizhan
+                    Tarantula X6 оснащается аккумулятором на 1200 мАч с напряжением 7.4V. В воздухе при активных полетах
+                    он продержится до 7 минут.</p>
+                <h5>JJRC H36</h5>
+                <img src="assets/images/droneJunior/H36.jpg" alt="Фото дрона" title="Фото дрона"
+                     class="Junior_bestDrone_img Junior_bestDrone_img3">
+                <p>JJRC H36 &mdash; это <strong>хороший вариант для начинающих</strong>. Удобный пульт управления
+                    позволяет без проблем
+                    контролировать этот дрон даже дома. Он имеет крошечный корпус, но при этом он довольно устойчивый к
+                    ударам и столкновениям. JJRC H36 способен делать сальто и вращения в любом направлении.</p>
+                <p>Этот простенький квадрокоптер поставляется с батареей на 150 мАч, 3.7V, а благодаря легком весу, он
+                    летает около 5&ndash;6 минут. Самое главное, его не жалко разбить, так как в китайских магазинах
+                    есть
+                    множество различных деталей и компонентов к этой модели.</p>
+                <h5>JJRC H98</h5>
+                <img src="assets/images/droneJunior/H98.jpg" alt="Фото дрона" title="Фото дрона"
+                     class="Junior_bestDrone_img Junior_bestDrone_img4">
+                <p>JJRC H98 &mdash; классный дрон с интересным дизайном и форм&ndash;фактором. Это небольшой беспилотник
+                    для
+                    начинающих с 0.3 Мп камерой на борту. Он умеет делать снимки с воздуха и записывать видео в полете.
+                    Еще одним его неоспоримым преимуществом можно назвать функцию возврата к пилоту по нажатию на кнопку
+                    на пульте.</p>
+                <p>Аккумулятор у JJRC H98 установлен на 390 мАч, 3.7V, такая емкость батареи позволяет ему летать около
+                    6&ndash;8 минут, это неплохой результат, учитывая габариты и вес этого вертолета. Ах да, этот дрон
+                    можно
+                    запускать даже в темное время суток, так как он комплектуется LED подсветкой, чтобы не
+                    потеряться.</p>
+                <h5>JJRC H31</h5>
+                <img src="assets/images/droneJunior/H31.jpg" alt="Фото дрона" title="Фото дрона"
+                     class="Junior_bestDrone_img Junior_bestDrone_img5">
+                <p>JJRC H31 имеет такой же размер, что и JJRC H98, упомянутый выше, но эта модель оснащается
+                    водонепроницаемым корпусом. Так что если вы новичок и еще не чувствуете управление &mdash; можете не
+                    бояться утопить его или запачкать, он выживет. Конечно, здесь стоит отметить, что речь идет о не
+                    очень глубоких водоемах и лужах, так как дрон увесистый и он просто может пойти на дно в глубоком
+                    озере или речке.</p>
+                <p>У JJRC H31 есть все базовые функции и начальные возможности: Headless Mode, возврат в одно касание,
+                    3D вращения в воздухе и сменные лопасти. Он питается от аккумуляторной батареи на 400 мАч, 3.7V и
+                    может летать где&ndash;то 8&ndash;10 минут, в зависимости от скорости и стиля управления.</p>
+                <h5>На что стоит обратить внимание при выборе первого дрона</h5>
+                <ul>
+                    <li>
+                        <p>стоимость квадрокоптера</p>
+                    </li>
+                    <li>
+                        <p>наличие камеры хотя бы 0.3 Мп для фото и видео съемки</p>
+                    </li>
+                    <li>
+                        <p>время полета от 5&ndash;6 минут</p>
+                    </li>
+                    <li>
+                        <p>сменные запчасти в продаже для починки лопастей и прочего</p>
+                    </li>
+                    <li>
+                        <p>наличие прочих важных функции вроде FPV и Wi&ndash;Fi подключения к смартфону</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="article articleDroneJunior_gallery" id="articleDroneJunior_gallery">
+                <h4>Немного Фото для новичков</h4>
+                <div class="slider4">
+                    <div><img src="assets/images/droneJuniorGalery/1.jpg" alt="Фото дрона" title="Фото дрона"></div>
+                    <div><img src="assets/images/droneJuniorGalery/2.jpg" alt="Фото дрона" title="Фото дрона"></div>
+                    <div><img src="assets/images/droneJuniorGalery/3.jpg" alt="Фото дрона" title="Фото дрона"></div>
+                    <div><img src="assets/images/droneJuniorGalery/4.jpg" alt="Фото дрона" title="Фото дрона"></div>
+                    <div><img src="assets/images/droneJuniorGalery/5.jpg" alt="Фото дрона" title="Фото дрона"></div>
+                    <div><img src="assets/images/droneJuniorGalery/6.jpg" alt="Фото дрона" title="Фото дрона"></div>
+                    <div><img src="assets/images/droneJuniorGalery/7.jpg" alt="Фото дрона" title="Фото дрона"></div>
+                </div>
+            </article>
+        </section>
     </main>
     <footer class="footer">
+        <p class="copy">Все прова защищены,2018г&copy;</p>
+        <div class="logo footer__logo">
+            <img class="logo__Img" src="assets/images/icon256.png"></img>
+            <div class="logo__text">life<br>N'<br>drones</div>
+        </div>
+        <div class="footer_img"><img src="assets/images/icon256.png" alt="логотип" title="логотип"></div>
+        <p>Старался: Грамович Игорь<br>FD1-53-17</p>
     </footer>
 </div>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
