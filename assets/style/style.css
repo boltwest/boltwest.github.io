@@ -554,6 +554,42 @@ body {
     color: #374149;
 }
 
+.slider3 .slick-prev:before,
+.slider3 .slick-next:before{
+    color: #374149;
+}
+
+p.textArial{
+    font: italic 17px arial;
+}
+
+.articleDronePhoto{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.articleDronePhoto3,
+.articleDronePhoto4{
+    width: 40%;
+    box-shadow: 0 0 10px #555;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.articleDronePhoto3:hover,
+.articleDronePhoto4:hover{
+    transform: scale(2);
+    box-shadow: 20px 20px 20px #555;
+}
+
+.articleDronePhoto__video{
+    margin:0 auto;
+}
+
+
+
+
 
 
 

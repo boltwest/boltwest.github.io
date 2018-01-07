@@ -212,6 +212,16 @@
         background: url(../images/droneJunior_1.png) no-repeat 90% 70%;
         background-size: 65%;
     }
+
+    .articleDronePhoto3,
+    .articleDronePhoto4{
+        width: 60%;
+    }
+
+    .articleDronePhoto3:hover,
+    .articleDronePhoto4:hover{
+        transform: scale(1.6);
+    }
 }
 
 
