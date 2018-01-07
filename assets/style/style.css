@@ -603,3 +603,28 @@ p.textArial{
     display: block;
     margin:0 auto;
 }
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #555;
+    margin:15px 0;
+
+}
+
+.footer_img{
+    display: none;
+}
+
+.footer_img img{
+    width: 50px;
+}
+
+.footer p{
+    font-family: 'Lobster', cursive;
+    color: #555;
+}

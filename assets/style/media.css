@@ -230,8 +230,13 @@
 
 
 @media screen and (max-width: 770px){
+    .footer_img{
+        display: block;
+    }
 
-
+    .footer__logo{
+        display: none;
+    }
 }
 
 
@@ -271,6 +276,11 @@
 
     .nav__text_dronePhotoText{
         top: 50px;
+    }
+
+    .footer{
+        flex-direction: column;
+        padding:5px;
     }
 }
 
