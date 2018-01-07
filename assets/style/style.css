@@ -68,34 +68,33 @@ body {
 }
 
 @-webkit-keyframes prop {
-    from{
+    from {
         -webkit-transform: none;
         transform: none;
 
     }
-    to{
+    to {
         -webkit-transform: rotateZ(360deg);
         transform: rotateZ(360deg);
     }
 }
 
 @keyframes prop {
-    from{
+    from {
         -webkit-transform: none;
         transform: none;
 
     }
-    to{
+    to {
         -webkit-transform: rotateZ(360deg);
         transform: rotateZ(360deg);
     }
 }
 
-
-.prop__img{
+.prop__img {
 
     position: absolute;
-    top:-180px;
+    top: -180px;
     right: calc(((100vw - 1006px) / 2 - 160px) * -1);
     width: 400px;
     -webkit-animation: prop 5s linear infinite;
@@ -103,7 +102,6 @@ body {
     -webkit-transform-origin: 50% 66%;
     -ms-transform-origin: 50% 66%;
     transform-origin: 50% 66%;
-
 
 }
 
@@ -129,8 +127,8 @@ body {
 .header__text {
     width: 400px;
     float: right;
-    margin-top:30px;
-    margin-right:120px;
+    margin-top: 30px;
+    margin-right: 120px;
     font: 18px sans-serif;
     font-style: italic;
 }
@@ -168,7 +166,6 @@ body {
     background: url(../images/droneJunior.png) no-repeat 50% 55%;
     background-size: 65%;
 }
-
 
 .nav__text {
     text-align: center;
@@ -285,9 +282,9 @@ body {
 .menu > ul > li {
     border-right: 1px solid #7c8892;
     position: relative;
-    -webkit-box-flex:1;
-    -ms-flex-positive:1;
-    flex-grow:1;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 }
 
 .menu > ul > li:last-child {
@@ -342,13 +339,13 @@ body {
 .article h4 {
     text-align: center;
     font: 35px sans-serif;
-    font-weight:800;
+    font-weight: 800;
 }
 
 .article h5 {
     text-align: center;
     font: 28px sans-serif;
-    font-weight:700;
+    font-weight: 700;
 }
 
 .video {
@@ -514,22 +511,22 @@ body {
     box-shadow: 5px 5px 5px #3C3F41;
 }
 
-.terminButton{
+.terminButton {
     font-size: 20px;
-    font-weight:400;
+    font-weight: 400;
     color: gray;
     cursor: pointer;
 }
 
-.articleTermin p{
+.articleTermin p {
     position: relative;
 }
 
-.articleTermin img{
+.articleTermin img {
     display: inline-block;
     position: absolute;
-    bottom:-20px;
-    right:calc(50% - 30px);
+    bottom: -20px;
+    right: calc(50% - 30px);
     width: 0;
     border-radius: 10px;
     z-index: 100;
@@ -538,7 +535,7 @@ body {
     transition: all .5s;
 }
 
-.terminButton:hover img{
+.terminButton:hover img {
     width: 300px;
     -webkit-box-shadow: 0 0 10px gray;
     box-shadow: 0 0 10px gray;
@@ -547,13 +544,13 @@ body {
     transform: translateX(40%) translateY(100%);
 }
 
-.slider2{
-    padding:10px;
+.slider2 {
+    padding: 10px;
 }
 
 .slider4 img,
 .slider2 img,
-.slider3 img{
+.slider3 img {
     width: 100%;
 }
 
@@ -562,21 +559,20 @@ body {
 .slider3 .slick-prev:before,
 .slider3 .slick-next:before,
 .slider2 .slick-prev:before,
-.slider2 .slick-next:before{
+.slider2 .slick-next:before {
     color: #374149;
 }
 
-
-p.textArial{
+p.textArial {
     font: italic 17px arial;
 }
 
-.textBold{
+.textBold {
     font-size: 21px;
-    font-weight:550;
+    font-weight: 550;
 }
 
-.articleDronePhoto{
+.articleDronePhoto {
     width: 70%;
     display: block;
     margin: 0 auto;
@@ -584,7 +580,7 @@ p.textArial{
 
 .articleDronePhoto3,
 .articleDronePhoto4,
-.Junior_bestDrone_img{
+.Junior_bestDrone_img {
     width: 40%;
     -webkit-box-shadow: 0 0 10px #555;
     box-shadow: 0 0 10px #555;
@@ -596,7 +592,7 @@ p.textArial{
 
 .articleDronePhoto3:hover,
 .articleDronePhoto4:hover,
-.Junior_bestDrone_img:hover{
+.Junior_bestDrone_img:hover {
     -webkit-transform: scale(2);
     -ms-transform: scale(2);
     transform: scale(2);
@@ -604,8 +600,8 @@ p.textArial{
     box-shadow: 20px 20px 20px #555;
 }
 
-.articleDronePhoto__video{
-    margin:0 auto;
+.articleDronePhoto__video {
+    margin: 0 auto;
 }
 
 .article {
@@ -616,12 +612,12 @@ p.textArial{
     display: block;
 }
 
-.Junior_bestDrone_img{
+.Junior_bestDrone_img {
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.footer{
+.footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -638,19 +634,19 @@ p.textArial{
     border-radius: 10px;
     -webkit-box-shadow: 0 0 10px #555;
     box-shadow: 0 0 10px #555;
-    margin:15px 0;
+    margin: 15px 0;
 
 }
 
-.footer_img{
+.footer_img {
     display: none;
 }
 
-.footer_img img{
+.footer_img img {
     width: 50px;
 }
 
-.footer p{
+.footer p {
     font-family: 'Lobster', cursive;
     color: #555;
 }
