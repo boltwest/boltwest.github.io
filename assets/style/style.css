@@ -545,7 +545,8 @@ body {
     padding:10px;
 }
 
-.slider2 img{
+.slider2 img,
+.slider3 img{
     width: 100%;
 }
 
