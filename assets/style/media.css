@@ -130,6 +130,10 @@
         content: "d";
     }
 
+    .menu input:not(:checked)~ul li ul{
+        display: none;
+    }
+
     .menu_sub__toggle{
         width: 100%;
         height: 100%;

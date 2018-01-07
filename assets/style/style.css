@@ -94,7 +94,7 @@ body {
 .prop__img{
     position: absolute;
     top:-180px;
-    right: calc(((100vw - 1006px) / 2 - 50px) * -1);
+    right: calc(((100vw - 1006px) / 2 - 120px) * -1);
     width: 400px;
     -webkit-animation: prop 5s linear infinite;
     animation: prop 5s linear infinite;
@@ -512,6 +512,19 @@ body {
 
 .article:target {
     display: block;
+}
+
+.slider2{
+    padding:10px;
+}
+
+.slider2 img{
+    width: 100%;
+}
+
+.slider2 .slick-prev:before,
+.slider2 .slick-next:before{
+    color: #374149;
 }
 
 
