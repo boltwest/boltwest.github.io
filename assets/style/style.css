@@ -94,7 +94,7 @@ body {
 .prop__img{
     position: absolute;
     top:-180px;
-    right: calc(((100vw - 1006px) / 2 - 140px) * -1);
+    right: calc(((100vw - 1006px) / 2 - 160px) * -1);
     width: 400px;
     -webkit-animation: prop 5s linear infinite;
     animation: prop 5s linear infinite;
@@ -126,7 +126,7 @@ body {
     width: 400px;
     float: right;
     margin-top:30px;
-    margin-right:80px;
+    margin-right:120px;
     font: 18px sans-serif;
     font-style: italic;
 }
@@ -334,12 +334,14 @@ body {
 
 .article h4 {
     text-align: center;
-    font: 25px sans-serif;
+    font: 35px sans-serif;
+    font-weight:800;
 }
 
 .article h5 {
     text-align: center;
     font: 23px sans-serif;
+    font-weight:700;
 }
 
 .video {
@@ -505,6 +507,31 @@ body {
     box-shadow: 5px 5px 5px #3C3F41;
 }
 
+.textBold{
+    font-size: 25px;
+    font-weight:600;
+}
+
+.terminButton{
+    font-size: 20px;
+    font-weight:400;
+    color: gray;
+    cursor: pointer;
+}
+
+.articleTermin img{
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.terminButton:hover+img{
+    width: 300px;
+    box-shadow: 0 0 10px gray;
+}
+
 .article,
 .article {
     display: none;
@@ -526,6 +553,42 @@ body {
 .slider2 .slick-next:before{
     color: #374149;
 }
+
+.slider3 .slick-prev:before,
+.slider3 .slick-next:before{
+    color: #374149;
+}
+
+p.textArial{
+    font: italic 17px arial;
+}
+
+.articleDronePhoto{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.articleDronePhoto3,
+.articleDronePhoto4{
+    width: 40%;
+    box-shadow: 0 0 10px #555;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.articleDronePhoto3:hover,
+.articleDronePhoto4:hover{
+    transform: scale(2);
+    box-shadow: 20px 20px 20px #555;
+}
+
+.articleDronePhoto__video{
+    margin:0 auto;
+}
+
+
+
 
 
 
