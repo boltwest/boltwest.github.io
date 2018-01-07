@@ -94,7 +94,7 @@ body {
 .prop__img{
     position: absolute;
     top:-180px;
-    right: calc(((100vw - 1006px) / 2 - 140px) * -1);
+    right: calc(((100vw - 1006px) / 2 - 160px) * -1);
     width: 400px;
     -webkit-animation: prop 5s linear infinite;
     animation: prop 5s linear infinite;
@@ -126,7 +126,7 @@ body {
     width: 400px;
     float: right;
     margin-top:30px;
-    margin-right:80px;
+    margin-right:120px;
     font: 18px sans-serif;
     font-style: italic;
 }
@@ -334,12 +334,14 @@ body {
 
 .article h4 {
     text-align: center;
-    font: 25px sans-serif;
+    font: 35px sans-serif;
+    font-weight:800;
 }
 
 .article h5 {
     text-align: center;
     font: 23px sans-serif;
+    font-weight:700;
 }
 
 .video {
@@ -503,6 +505,28 @@ body {
     transform: scale(1.02);
     -webkit-box-shadow: 5px 5px 5px #3C3F41;
     box-shadow: 5px 5px 5px #3C3F41;
+}
+
+.textBold{
+    font-size: 25px;
+    font-weight:600;
+}
+
+.terminButton{
+    font-size: 20px;
+    font-weight:400;
+    color: gray;
+    cursor: pointer;
+}
+
+.articleTermin img{
+    position: absolute;
+    width: 0;
+    transition: width .5s;
+}
+
+.terminButton:hover+img{
+    width: 300px;
 }
 
 .article,
